@@ -1,0 +1,14 @@
+@EndUserText.label: 'Interruption List'
+define service ZMM_UI_INTERRUPTIONLIST {
+  expose zmmr_Interruptionlist as intlist;
+  expose zmmr_shPLant          as shplant;
+  expose zmmr_SHpurchaseorder  as shpo;
+  expose zmmr_SHsupplier       as shsupplier;
+  expose zmmr_shTAXCODE        as shtax;
+  expose zmmr_shintertype      as shintertype;
+  expose ZMMR_INT_SETTABLE     as setInt;
+  expose ZMMR_INT_GETDETAIL    as getIntDetail;
+  expose ZMMR_INT_CLOSE        as setIntClose;
+  expose ZMMR_INT_open         as setIntOpen;
+  expose ZMMR_SHWBS            as shwbs;
+}

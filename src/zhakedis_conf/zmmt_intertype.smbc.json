@@ -1,0 +1,38 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Kesinti Türü Bakım Tablosu bakımını yap",
+    "originalLanguage": "tr",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "serviceConfiguration": {
+    "serviceBinding": "ZUI_MMT_INTERTYPE_O4",
+    "serviceName": "ZUI_MMT_INTERTYPE_O4",
+    "serviceVersion": "0001",
+    "rootEntitySet": "ZMMT_INTERTYPE_S",
+    "name": "Kesinti Türü Bakım Tablosu",
+    "transportObject": "ZMMT_INTERTYPET",
+    "configurationGroup": "",
+    "skipRootEntity": "skip"
+  },
+  "appConfiguration": {
+    "listReport": {},
+    "objectPages": [
+      {
+        "entitySet": "ZMMT_INTERTYPE_S",
+        "variantManagement": "control",
+        "showTransportSelectionStrip": true
+      }
+    ],
+    "tableSettings": [
+      {
+        "entitySet": "ZMMT_INTERTYPE_D",
+        "selectionMode": "single",
+        "selectAll": true,
+        "rowCountMode": "auto",
+        "frozenColumnCount": 1,
+        "threshold": 10
+      }
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'ZMMT_INTERTYPE_D', 
+    typeNamePlural: 'ZMMT_INTERTYPE_Ds', 
+    title: {
+      type: #STANDARD, 
+      label: 'Kesinti Türü Bakım Tablosu', 
+      value: 'Interruptiontype'
+    }
+  }
+}
+annotate view ZI_MMT_INTERTYPE_D with
+{
+  @UI.identification: [ {
+    position: 1 
+  } ]
+  @UI.lineItem: [ {
+    position: 1 
+  }, 
+  {
+    type: #FOR_ACTION, 
+    dataAction: 'Copy', 
+    label: 'Seçilen girişi kopyala', 
+    invocationGrouping: #CHANGE_SET
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_MMT_INTERTYPE_D', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'Kesinti Türü Bakım Tablosu', 
+    position: 1 
+  } ]
+  Interruptiontype;
+  
+  @UI.identification: [ {
+    position: 2 
+  } ]
+  @UI.lineItem: [ {
+    position: 2 
+  } ]
+  Interruptiontypetxt;
+  
+  @UI.identification: [ {
+    position: 3 
+  } ]
+  @UI.lineItem: [ {
+    position: 3 
+  } ]
+  CustomField;
+  
+  @UI.identification: [ {
+    position: 4 
+  } ]
+  @UI.lineItem: [ {
+    position: 4 
+  } ]
+  SignIndicator;
+  
+  @UI.identification: [ {
+    position: 5 
+  } ]
+  @UI.lineItem: [ {
+    position: 5 
+  } ]
+  TaxEntryReq;
+  
+  @UI.identification: [ {
+    position: 6 
+  } ]
+  @UI.lineItem: [ {
+    position: 6 
+  } ]
+  InvoiceReq;
+  
+  @UI.identification: [ {
+    position: 7 
+  } ]
+  @UI.lineItem: [ {
+    position: 7 
+  } ]
+  Reflection;
+  
+  @UI.identification: [ {
+    position: 8 
+  } ]
+  @UI.lineItem: [ {
+    position: 8 
+  } ]
+  Taxcode;
+  
+  @UI.identification: [ {
+    position: 9 
+  } ]
+  @UI.lineItem: [ {
+    position: 9 
+  } ]
+  AccDocType;
+  
+  @UI.identification: [ {
+    position: 10 
+  } ]
+  @UI.lineItem: [ {
+    position: 10 
+  } ]
+  AccDocTypeNeg;
+  
+  @UI.identification: [ {
+    position: 11 
+  } ]
+  PypSuffix;
+  
+  @UI.identification: [ {
+    position: 12 
+  } ]
+  WbsReq;
+}

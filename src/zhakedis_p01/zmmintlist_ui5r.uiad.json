@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Hakediş kesinti girişlerini yönet",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Hakediş kesinti girişlerini yönet"
+  },
+  "ui5AppDetails": {
+    "appId": "com.soapeople.zmminterruptionlist"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_20FFFD12C0D322C8D956D44B9E4F92BFFBCE5E4B_TM",
+    "semanticObject": "zmminterruptionlist",
+    "action": "manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_20FFFD12C0D322C8D956D44B9E4F92BFFBCE5E4B_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Hakediş kesinti girişlerini yönet",
+        "subtitle": "Hakediş kesinti girişlerini yönet"
+      }
+    }
+  ]
+}

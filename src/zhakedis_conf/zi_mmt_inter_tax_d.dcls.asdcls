@@ -1,0 +1,5 @@
+@MappingRole: true
+define role ZI_MMT_INTER_TAX_D {
+  grant select on ZI_MMT_INTER_TAX_D
+  where ( ) = ASPECT pfcg_auth ( 'S_TABU_NAM', ACTVT = '03', TABLE = 'ZI_MMT_INTER_TAX_D' );
+}

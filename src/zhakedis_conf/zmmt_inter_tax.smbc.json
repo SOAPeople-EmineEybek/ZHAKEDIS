@@ -1,0 +1,40 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Kesinti Türü - Kullanılabilir Vergi Türl bakımını",
+    "originalLanguage": "tr",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "serviceConfiguration": {
+    "serviceBinding": "ZUI_MMT_INTER_TAX_O4",
+    "serviceName": "ZUI_MMT_INTER_TAX_O4",
+    "serviceVersion": "0001",
+    "rootEntitySet": "ZMMT_INTER_TAX_S",
+    "name": "Kesinti Türü - Kullanılabilir Vergi Türü",
+    "transportObject": "ZMMT_INTER_TAXT",
+    "configurationGroup": "",
+    "skipRootEntity": "skip"
+  },
+  "appConfiguration": {
+    "listReport": {},
+    "objectPages": [
+      {
+        "entitySet": "ZMMT_INTER_TAX_S",
+        "variantManagement": "control",
+        "showTransportSelectionStrip": true
+      }
+    ],
+    "tableSettings": [
+      {
+        "entitySet": "ZMMT_INTER_TAX_D",
+        "tableType": "gridTable",
+        "selectAll": true,
+        "rowCountMode": "auto",
+        "frozenColumnCount": 2,
+        "creationModeName": "inlineCreationRows",
+        "createAtEnd": true,
+        "widthIncludingColumnHeader": true
+      }
+    ]
+  }
+}

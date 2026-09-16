@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Hakediş Çıktı Rapor Uygulaması",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Hakediş Çıktı Kokpiti"
+  },
+  "ui5AppDetails": {
+    "appId": "hakediscikti.com.soapeople.hakediscikti"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_9A25CFB0BAEF83D20EFAFD78884528440D9BB1F7_TM",
+    "semanticObject": "zmmhakediscikti",
+    "action": "manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_9A25CFB0BAEF83D20EFAFD78884528440D9BB1F7_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Hakediş Çıktı Kokpiti",
+        "subtitle": "Hakediş Çıktı"
+      }
+    }
+  ]
+}

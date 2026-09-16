@@ -1,0 +1,75 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: {
+    typeName: 'Hakediş Raporu',
+    typeNamePlural: 'Hakediş Raporu',
+    title: { type: #STANDARD, value: 'Serviceentrysheet' },
+    description: { type: #STANDARD, value: 'Purchaseorder' }
+}
+annotate entity ZC_INT_LOG  with
+{
+
+  /* =========================
+     FACET
+     ========================= */
+  @UI.facet: [
+    {
+      id: 'General',
+      purpose: #STANDARD,
+      position: 10,
+      label: 'Genel Bilgiler',
+      type: #IDENTIFICATION_REFERENCE
+    }
+  ]
+
+  /* =========================
+     LIST REPORT – LINE ITEM
+     ========================= */
+  @UI.lineItem: [
+//    { type:#FOR_ACTION, dataAction: 'SetIntClose', label: 'Kapat' },
+//    { type:#FOR_ACTION, dataAction: 'SetIntOpen', label: 'Aç' },
+    { position: 10, value: 'Purchaseorder',         label: 'Satınalma Emri' },
+    { position: 20, value: 'Serviceentrysheet',     label: 'Hakediş Numarası' },
+    { position: 30, value: 'Item',                  label: 'Hakediş Kalemi' },
+    { position: 40, value: 'Plant',                 label: 'Üretim Yeri' },
+    { position: 50, value: 'Netpriceamount',        label: 'Net Tutar' },
+    { position: 60, value: 'Interruptioncurrency',  label: 'Para Birimi' },
+    { position: 70, value: 'Amount',                label: 'Kesinti Tutarı' },
+    { position: 80, value: 'Amountwithtax',         label: 'KDV Dahil Tutar' },
+    { position: 90, value: 'Statu',                 label: 'Statü' },
+    { position: 100, value: 'Interruptiontypetext', label: 'Kesinti Tipi' },
+    { position: 110, value: 'Note',                 label: 'Not' }
+  ]
+
+  /* =========================
+     OBJECT PAGE – IDENTIFICATION
+     ========================= */
+  @UI.identification: [
+    { position: 10, value: 'Purchaseorder',        label: 'Satınalma Emri' },
+    { position: 20, value: 'Serviceentrysheet',    label: 'Hakediş Numarası' },
+    { position: 30, value: 'Item',                 label: 'Hakediş Kalemi' },
+    { position: 40, value: 'Plant',                label: 'Üretim Yeri' },
+    { position: 50, value: 'Netpriceamount',       label: 'Net Tutar' },
+    { position: 60, value: 'Interruptioncurrency', label: 'Para Birimi' },
+    { position: 70, value: 'Amount',               label: 'Kesinti Tutarı' },
+    { position: 80, value: 'Amountwithtax',        label: 'KDV Dahil Tutar' },
+    { position: 90, value: 'Statu',                label: 'Statü' },
+    { position: 100, value: 'Interruptiontypetext', label: 'Kesinti Tipi' },
+    { position: 110, value: 'Note',                 label: 'Not' }
+  ]
+
+  /* =========================
+     SELECTION FIELDS
+     ========================= */
+  @UI.selectionField: [{ position: 10 }]
+  Purchaseorder;
+
+  @UI.selectionField: [{ position: 20 }]
+  Serviceentrysheet;
+
+  @UI.selectionField: [{ position: 30 }]
+  Plant;
+
+  @UI.selectionField: [{ position: 40 }]
+  Statu;
+
+}

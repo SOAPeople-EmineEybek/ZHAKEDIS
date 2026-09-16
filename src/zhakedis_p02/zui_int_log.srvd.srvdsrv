@@ -1,0 +1,4 @@
+@EndUserText.label: 'Hakediş Raporu SD'
+define service ZUI_INT_LOG {
+  expose ZC_INT_LOG as List;
+}

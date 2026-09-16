@@ -1,0 +1,87 @@
+managed with additional save implementation in class ZBP_I_MMT_INTER_TAX_S unique;
+strict;
+with draft;
+define behavior for ZI_MMT_INTER_TAX_S alias ZMMT_INTER_TAX_S
+draft table ZMMT_INTER_TAX_S
+with unmanaged save
+lock master total etag LastChangedAtMax
+authorization master( global )
+{
+  field ( readonly )
+   SingletonID;
+
+  field ( features : instance )
+   TransportRequestID;
+
+  field ( notrigger )
+   SingletonID,
+   LastChangedAtMax;
+
+
+  update;
+  internal create;
+  internal delete;
+
+  draft action ( features : instance ) Edit with additional implementation;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+  action ( features : instance ) SelectCustomizingTransptReq parameter D_SelectCustomizingTransptReqP result [1] $self;
+
+  association _ZMMT_INTER_TAX_D { create ( features : instance ); with draft; }
+
+  validation ValidateTransportRequest on save ##NOT_ASSIGNED_TO_DETACT
+  {
+    create;
+    update;
+  }
+
+  side effects
+  {
+    action SelectCustomizingTransptReq affects
+        $self;
+  }
+
+}
+
+define behavior for ZI_MMT_INTER_TAX_D alias ZMMT_INTER_TAX_D ##UNMAPPED_FIELD
+persistent table ZMMT_INTER_TAX
+draft table ZMMT_INTER_TAX_D
+lock dependent by _ZMMT_INTER_TAX_S
+authorization dependent by _ZMMT_INTER_TAX_S
+{
+  field ( mandatory : create )
+   Interruptiontype,
+   Taxcode;
+
+  field ( readonly )
+   SingletonID;
+
+  field ( readonly : update )
+   Interruptiontype,
+   Taxcode;
+
+  field ( notrigger )
+   SingletonID;
+
+
+  update( features : global );
+  delete( features : global );
+
+  mapping for ZMMT_INTER_TAX
+  {
+    Interruptiontype = INTERRUPTIONTYPE;
+    Taxcode = TAXCODE;
+  }
+
+  association _ZMMT_INTER_TAX_S { with draft; }
+
+  validation ValidateTransportRequest on save ##NOT_ASSIGNED_TO_DETACT
+  {
+    create;
+    update;
+    delete;
+  }
+
+}

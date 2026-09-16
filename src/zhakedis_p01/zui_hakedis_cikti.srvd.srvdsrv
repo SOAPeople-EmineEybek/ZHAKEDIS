@@ -1,0 +1,14 @@
+@EndUserText.label: 'Hakediş Çıktı Kokpiti Servisi'
+define service ZUI_HAKEDIS_CIKTI {
+  expose ZMMR_HAKEDIS_CIKTI_CDS   as HakedisListesi;
+  expose ZMMR_HAKEDIS_DET_KESINTI as KesintiDetayi;
+  expose ZMMR_HAKEDIS_DET_IMALAT  as ImalatDetayi;
+  expose ZMMR_HAKEDIS_DET_TUTANAK as TutanakDetayi;
+  expose ZMMR_VH_SUPPLIER         as VH_Supplier;
+  expose ZMMR_VH_COMPANYCODE      as VH_CompanyCode;
+  expose ZMMR_VH_PURCHASEORDER    as VH_PurchaseOrder;
+  expose ZMMR_VH_APPROVAL_STATUS  as VH_ApprovalStatus;
+  expose ZMMR_VH_INT_STATU        as VH_IntStatu;
+  expose ZMMR_VH_SZLEME_TIPI      as VH_SzlemeTipi;
+  expose ZMMR_VH_ANA_GRUP         as VH_AnaGrup;
+}

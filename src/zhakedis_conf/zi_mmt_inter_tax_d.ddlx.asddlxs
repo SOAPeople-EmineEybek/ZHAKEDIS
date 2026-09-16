@@ -1,0 +1,37 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'ZMMT_INTER_TAX_D', 
+    typeNamePlural: 'ZMMT_INTER_TAX_Ds', 
+    title: {
+      type: #STANDARD, 
+      label: 'Kesinti Türü - Kullanılabilir Vergi Türü', 
+      value: 'Interruptiontype'
+    }
+  }
+}
+annotate view ZI_MMT_INTER_TAX_D with
+{
+  @UI.identification: [ {
+    position: 1 
+  } ]
+  @UI.lineItem: [ {
+    position: 1 
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_MMT_INTER_TAX_D', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'Kesinti Türü - Kullanılabilir Vergi Türü', 
+    position: 1 
+  } ]
+  Interruptiontype;
+  
+  @UI.identification: [ {
+    position: 2 
+  } ]
+  @UI.lineItem: [ {
+    position: 2 
+  } ]
+  Taxcode;
+}

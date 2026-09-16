@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SRVD" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SRVD>
+    <NAME>ZUI_INT_LOG</NAME>
+    <TYPE>SRVD/SRV</TYPE>
+    <DESCRIPTION>Hakediş Raporu SD</DESCRIPTION>
+    <LANGUAGE>TR</LANGUAGE>
+    <MASTER_LANGUAGE>TR</MASTER_LANGUAGE>
+    <SOURCE_URI>./zui_int_log/source/main</SOURCE_URI>
+    <SOURCE_TYPE>ABAP_SOURCE</SOURCE_TYPE>
+    <SOURCE_ORIGIN_DESCRIPTION>ABAP geliştirme araçları</SOURCE_ORIGIN_DESCRIPTION>
+    <SRVD_SOURCE_TYPE>S</SRVD_SOURCE_TYPE>
+    <SRVD_SOURCE_TYPE_DESC>Definition</SRVD_SOURCE_TYPE_DESC>
+   </SRVD>
+  </asx:values>
+ </asx:abap>
+</abapGit>

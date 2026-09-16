@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZI_MMT_INTERTYPE_S'
+define service ZUI_MMT_INTERTYPE {
+  expose ZI_MMT_INTERTYPE_S as ZMMT_INTERTYPE_S;
+  expose ZI_MMT_INTERTYPE_D as ZMMT_INTERTYPE_D;
+}

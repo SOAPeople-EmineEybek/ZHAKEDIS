@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZI_MMT_INTER_TAX_S'
+define service ZUI_MMT_INTER_TAX {
+  expose ZI_MMT_INTER_TAX_S as ZMMT_INTER_TAX_S;
+  expose ZI_MMT_INTER_TAX_D as ZMMT_INTER_TAX_D;
+}
